@@ -1,46 +1,46 @@
 <p align="center"> <a href="https://github.com/logpai"> <img src="https://github.com/logpai/logpai.github.io/blob/master/img/logpai_logo.jpg" width="425"></a></p>
 
-
 # Loghub
 Loghub maintains a collection of system logs, which are freely accessible for research purposes. Some of the logs are production data released from previous studies, while some others are collected from real systems in our lab environment. Wherever possible, the logs are NOT sanitized, anonymized or modified in any way. All these logs amount to over **77GB** in total. We thus host only a small sample (2k lines) on Github for each dataset. 
 
 :telescope: If you use the loghub datasets in your research for publication, please kindly cite the following paper.
-+ Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). *To appear in International Conference on Software Engineering (ICSE)*, 2019.
++ Shilin He, Jieming Zhu, Pinjia He, Michael R. Lyu. [Loghub: A Large Collection of System Log Datasets towards Automated Log Analytics](https://arxiv.org/abs/2008.06448). *Arxiv*, 2020. 
 
 ### How to get the data? 
-If you are interested in these datasets, please request the **[raw logs at Zenodo](https://doi.org/10.5281/zenodo.1144100)**. Kindly note that the affiliation information is minimally required for your data request. 
+If you are interested in these datasets, please request the **[raw logs via Zenodo](https://doi.org/10.5281/zenodo.1144100)**. 
 
 
 ### Logs currently available:
 
-| Software System               | Description | Time Span  |  #Messages  |   Data Size   |     
-| :---------------------------- | :--------| --------: | ---------: | ------: | 
-| **Distributed systems**       |    |        |             |          |                                                
-| [HDFS](./HDFS)                | Hadoop distributed file system log (*labeled*) | 38.7 hours | 11,175,629  |  1.47GB  |        
-|                               | Hadoop distributed file system log  |    N.A.    | 71,118,073  | 16.06GB  |          
-| [Hadoop](./Hadoop)            |  Hadoop mapreduce job log (*labeled*) |   N.A.    |   394,308   | 48.61MB  |     
-| [Spark](./Spark)              | Spark job log|    N.A.    | 33,236,604  |  2.75GB  |                               
-| [Zookeeper](./Zookeeper)      | ZooKeeper service log | 26.7 days  |   74,380    | 9.95MB  |      
-| [OpenStack](./OpenStack)      |  OpenStack infrastructure log (*labeled*) |  N.A.    |   207,820   | 58.61MB  |       
-| **Supercomputers**            |     |       |            |          |               
-| [BGL](./BGL)          | Blue Gene/L supercomputer log (*labeled*) | 214.7 days |  4,747,963  | 708.76MB |    
-| [HPC](./HPC)                  |  High performance cluster log |  N.A.    |   433,489   | 32.00MB  |               
-| [Thunderbird](./Thunderbird)  |  Thunderbird supercomputer log (*labeled*) | 244 days  | 211,212,192 | 29.60GB  |  
-| **Operating systems**         |   |         |             |          |                                                              
-| [Windows](./Windows)          | Windows event log | 226.7 days | 114,608,388 | 26.09GB  |        
-| [Linux](./Linux)              | Linux system log | 263.9 days |   25,567    |  2.25MB  |   
-| [Mac](./Mac)                  | Mac OS log | 7.0 days  |   117,283   | 16.09MB  |   
-| **Mobile systems**            |     |       |             |          |                                                     
-| [Andriod](./Andriod)          |  Andriod framework log |  N.A.    | 1,555,005  |  183.37MB |       
-| [HealthApp](./HealthApp)      | Health app log | 10.5 days  |   253,395   | 22.44MB  |               
-| **Server applications**       |    |        |             |          |                                                    
-| [Apache](./Apache) | Apache web server error log | 263.9 days |   56,481    |  4.90MB  |                           
-| [OpenSSH](./OpenSSH)          | OpenSSH server log |  28.4 days  |   655,146   | 70.02MB  |                        
-| **Standalone software**       |   |         |             |          |                                                     
-| [Proxifier](./Proxifier)      |   Proxifier software log | N.A.    |   21,329    |  2.42MB  |                                             
+| Software System               | Description | Labeled | Time Span  |  #Messages  |   Data Size   |     
+| :---------------------------- | :--------|  :--------: | --------: | ---------: | ------: | 
+| **Distributed systems**       |    |        | |             |          |                                                
+| [HDFS](./HDFS)                | Hadoop distributed file system log | :heavy_check_mark: | 38.7 hours | 11,175,629  |  1.47GB  |        
+|                               | Hadoop distributed file system log|  |    N.A.    | 71,118,073  | 16.06GB  |          
+| [Hadoop](./Hadoop)            |  Hadoop mapreduce job log | :heavy_check_mark: |   N.A.    |   394,308   | 48.61MB  |     
+| [Spark](./Spark)              | Spark job log ||    N.A.    | 33,236,604  |  2.75GB  |                               
+| [Zookeeper](./Zookeeper)      | ZooKeeper service log | | 26.7 days  |   74,380    | 9.95MB  |      
+| [OpenStack](./OpenStack)      |  OpenStack infrastructure log | :heavy_check_mark: |  N.A.    |   207,820   | 58.61MB  |       
+| **Supercomputers**            |     |      | |            |          |               
+| [BGL](./BGL)          | Blue Gene/L supercomputer log | :heavy_check_mark: | 214.7 days |  4,747,963  | 708.76MB |    
+| [HPC](./HPC)                  |  High performance cluster log | |  N.A.    |   433,489   | 32.00MB  |               
+| [Thunderbird](./Thunderbird)  |  Thunderbird supercomputer log | :heavy_check_mark: | 244 days  | 211,212,192 | 29.60GB  |  
+| **Operating systems**         |   |         |         |    |          |                                                              
+| [Windows](./Windows)          | Windows event log | | 226.7 days | 114,608,388 | 26.09GB  |        
+| [Linux](./Linux)              | Linux system log | | 263.9 days |   25,567    |  2.25MB  |   
+| [Mac](./Mac)                  | Mac OS log | | 7.0 days  |   117,283   | 16.09MB  |   
+| **Mobile systems**            |     |   |     |             |          |                                                     
+| [Andriod](./Andriod)          |  Andriod framework log | |  N.A.    | 1,555,005  |  183.37MB |       
+| [HealthApp](./HealthApp)      | Health app log  | | 10.5 days  |   253,395   | 22.44MB  |               
+| **Server applications**       |    |        |  |            |          |                                                    
+| [Apache](./Apache) | Apache web server error log | | 263.9 days |   56,481    |  4.90MB  |                           
+| [OpenSSH](./OpenSSH)          | OpenSSH server log | | 28.4 days  |   655,146   | 70.02MB  |                        
+| **Standalone software**       |   |         |       |      |          |                                                     
+| [Proxifier](./Proxifier)      |   Proxifier software log | | N.A.    |   21,329    |  2.42MB  |                                             
 
 
 ### Publications using these datasets
++ [**ASE'19**] Jinyang Liu, Jieming Zhu, Shilin He, Pinjia He, Zibin Zheng, Michael R. Lyu. [Logzip: Extracting Hidden Structures via Iterative Clustering for Log Compression](). To appear in IEEE/ACM International Conference on Automated Software Engineering (ASE), 2019.
 + [**ICSE'19**] Jieming Zhu, Shilin He, Jinyang Liu, Pinjia He, Qi Xie, Zibin Zheng, Michael R. Lyu. [Tools and Benchmarks for Automated Log Parsing](https://arxiv.org/pdf/1811.03509.pdf). International Conference on Software Engineering (ICSE), 2019.
 + [**TKDE'18**] Min Du, Feifei Li. [Spell: Online Streaming Parsing of Large Unstructured System Logs](https://ieeexplore.ieee.org/abstract/document/8489912). IEEE Transactions on Knowledge and Data Engineering (TKDE), 2018.
 + [**TDSC'18**] Pinjia He, Jieming Zhu, Shilin He, Jian Li, Michael R. Lyu. [Towards Automated Log Parsing for Large-Scale Log Data Analysis](https://ieeexplore.ieee.org/document/8067504). IEEE Transactions on Dependable and Secure Computing (TDSC), 2018.
@@ -55,7 +55,7 @@ If you are interested in these datasets, please request the **[raw logs at Zenod
 
 
 ### Organizations that download these datasets
-:telescope: We proudly announce that the loghub datasets have been downloaded [**1300+**](https://doi.org/10.5281/zenodo.1144100) times by more than [**170 organizations**](https://github.com/logpai/loghub/wiki/Loghub) from both industry and academia.
+:telescope: We proudly announce that the loghub datasets have been downloaded [**19000+**](https://zenodo.org/record/3227177) times by more than [**380+ organizations**](https://github.com/logpai/loghub/wiki/Loghub) from both industry and academia.
 
 ### Additional Logs
 We have some links to additional log datasets that are related to security research.
